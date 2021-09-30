@@ -1,0 +1,19 @@
+div.login{
+    min-height: 83vh;
+}
+
+span.profile{
+    color: #fff;
+}
+
+span.profile img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+
