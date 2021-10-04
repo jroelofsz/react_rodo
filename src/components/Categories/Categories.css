@@ -1,0 +1,13 @@
+.catCreate form{
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+}
+
+.catCreate form textarea{
+    margin: 0 auto;
+}
+
+.catCreate form input{
+    margin: 0 auto;
+
+}

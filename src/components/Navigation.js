@@ -1,6 +1,6 @@
 import React from 'react'
 //Import navbar and nav
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 import { useHistory } from 'react-router';
 import { Redirect } from 'react-router';
@@ -14,7 +14,7 @@ export default function Navigation() {
 
     function handleAuth(){
         logout();
-        <Redirect to="/login"/>
+        <Redirect to="#/login"/>
     }
     
     return (
@@ -26,11 +26,12 @@ export default function Navigation() {
             <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text>
                     <Nav>
-                        <Nav.Link href="/todos" className="text-white btn btn-dark m-1">Todos</Nav.Link>
-                        <Nav.Link href="/categories" className="text-white btn btn-dark m-1">Categories</Nav.Link>
+                        <Nav.Link href="#/home" className="text-white btn btn-dark m-1">Home</Nav.Link>
+                        <Nav.Link href="#/todos" className="text-white btn btn-dark m-1">Todos</Nav.Link>
+                        <Nav.Link href="#/categories" className="text-white btn btn-dark m-1">Categories</Nav.Link>
                         {currentUser ? 
                          <button onClick={() => handleAuth()} className="btn btn-danger m-1">Logout</button> : 
-                         <Nav.Link href="/login" className="btn btn-success text-white m-1">Login</Nav.Link> }
+                         <Nav.Link href="#/login" className="btn btn-success text-white m-1">Login</Nav.Link> }
                     </Nav>
                 </Navbar.Text>
             </Navbar.Collapse>

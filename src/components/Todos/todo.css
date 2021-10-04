@@ -1,0 +1,13 @@
+.todoCreate div.bg-light{
+    border-radius: 15px;
+    border: 1px solid #fff;
+
+}
+.todoCreate form input{
+    margin: 0 auto;
+
+}
+
+.todoCreate form select{
+    margin: 0 auto;
+}

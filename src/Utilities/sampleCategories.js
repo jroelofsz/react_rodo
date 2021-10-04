@@ -15,3 +15,6 @@ const sampleCategories = [
         "Description": "Fix issues w/ house"
     }
 ]
+
+
+export default sampleCategories;
